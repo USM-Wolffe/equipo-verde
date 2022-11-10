@@ -43,8 +43,6 @@ myapp_residuos = [
 class info(models.Model):
     nombre = models.CharField(max_length=30)
     empresa = models.CharField(max_length=20)
-    
-class select(models.Model):
     tipo = models.IntegerField(
         null=False, blank=False,
         choices= myapp_tipo
@@ -57,4 +55,6 @@ class select(models.Model):
         null=False, blank=False,
         choices= myapp_residuos
     )
+
+    
 
