@@ -42,7 +42,7 @@ myapp_residuos = [
 # Create your models here.
 class info(models.Model):
     nombre = models.CharField(max_length=30)
-    empresa = models.CharField(max_length=20)
+    empresa = models.CharField(max_length=50)
     tipo = models.IntegerField(
         null=False, blank=False,
         choices= myapp_tipo
