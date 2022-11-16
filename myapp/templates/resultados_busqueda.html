@@ -5,10 +5,9 @@
         <ul> 
             {% for elemento in residuos_buscados %}
                 <li>
-                    {{residuos_buscados}}
+                    {{elemento.empresa}}
                 </li>
             {% endfor %}
-
         </ul>
     {% else %}
         <p>No se encuentran empresas emisoras del residuo buscado</p>    

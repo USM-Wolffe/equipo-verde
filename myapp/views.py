@@ -25,27 +25,27 @@ def buscar(request):
         mensaje="Residuo buscado: %r" %request.GET["residuo"]
         residuo_ingresado=request.GET["residuo"]
         if residuo_ingresado == "Plástico":
-            residuos_buscados=info.objects.filter(residuos__icontains= 1)
+            residuos_buscados=info.objects.filter(residuos__exact ='1')
         elif residuo_ingresado == "Latas":
-            residuos_buscados=info.objects.filter(residuos__icontains=2)
+            residuos_buscados=info.objects.filter(residuos__exact='2')
         elif residuo_ingresado == "Residuos Orgánicos":
-            residuos_buscados=info.objects.filter(residuos__icontains=3)
+            residuos_buscados=info.objects.filter(residuos__exact='3')
         elif residuo_ingresado == "Residuos Metálicos":
-            residuos_buscados=info.objects.filter(residuos__icontains=4)
+            residuos_buscados=info.objects.filter(residuos__exact='4')
         elif residuo_ingresado == "Ropa/Tela":
-            residuos_buscados=info.objects.filter(residuos__icontains=5)
+            residuos_buscados=info.objects.filter(residuos__exact='5')
         elif residuo_ingresado == "Carton":
-            residuos_buscados=info.objects.filter(residuos__icontains=6)
+            residuos_buscados=info.objects.filter(residuos__exact='6')
         elif residuo_ingresado == "Vidrios":
-            residuos_buscados=info.objects.filter(residuos__icontains=7)
+            residuos_buscados=info.objects.filter(residuos__exact='7')
         elif residuo_ingresado == "Madera":
-            residuos_buscados=info.objects.filter(residuos__icontains=8)
+            residuos_buscados=info.objects.filter(residuos__exact='8')
         elif residuo_ingresado == "Papel":
-            residuos_buscados=info.objects.filter(residuos__icontains=9)
+            residuos_buscados=info.objects.filter(residuos__exact='9')
         elif residuo_ingresado == "Baterias y pilas":
-            residuos_buscados=info.objects.filter(residuos__icontains=10)
+            residuos_buscados=info.objects.filter(residuos__exact='10')
         elif residuo_ingresado == "Chatarra":
-            residuos_buscados=info.objects.filter(residuos__icontains=11)
+            residuos_buscados=info.objects.filter(residuos__exact='11')
         else:
-            residuos_buscados=info.objects.filter(residuos__icontains=12)
+            residuos_buscados=info.objects.filter(residuos__exact='12')
     return render(request, "resultados_busqueda.html", {"residuos_buscados":residuos_buscados, "query":residuo_ingresado})
