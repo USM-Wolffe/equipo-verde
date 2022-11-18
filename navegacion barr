@@ -1,5 +1,5 @@
 <!---- Navegacion ---------!>
-<nav class="main_nav_container">
+	<nav class="main_nav_container">
 				<div class="main_nav">
 					<ul class="main_nav_list">
 						<li class="main_nav_item"><a href="index.html">home</a></li>
@@ -12,6 +12,11 @@
 				</div>
 			</nav>
 		</div>
+		<div class="main_nav_item1 header_side d-flex flex-row justify-content-center align-items-center">
+			<img src="images/icons8-accede-redondeado-derecho-50 (1).png" alt="">
+			<span><a href="#">Registrar</a></span>
+		</div>
+
     <!---- css ---------!>
 .main_nav_container
 {
