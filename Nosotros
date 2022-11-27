@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+    <link rel="stylesheet" href="Css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&family=PT+Serif:ital@1&family=Staatliches&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Css/Style.css">
+</head>
+
+<body>
+
+    <!----Aqui Agregar barrra de navegación de pagina principal   --->
+    <nav class="navegacion">
+        <a class="navegacion__enlace" href="index.html">tienda</a>
+        <a class="navegacion__enlace navegacion__enlace--activo" href="nosotros.html">nosotros</a>
+    </nav>
+    <main class="contenedor">
+        <h1>Nosotros</h1>
+        <div class="nosotros">
+            <div class="nosotros__contenido">
+                <p> Dado que vivimos en una sociedad industrializada, la producción de bienes y desechos es directamente proporcional.  Respecto a estos desechos la principal “solución” hoy en día es el reciclaje, que en la teoría  contrarresta el problema, pero en la práctica tiene varias limitaciones, ya que este se enfoca en las personas individualmente en lugar de en las empresas las cuales son los principales productores de desechos,  en consecuencia el reciclaje resulta ser una medida costosa, no lucrativa y poco masificado.
+                </p>
+
+                <p>El rol de nuestro proyecto será facilitar la interacción tanto de pymes y empresas como de personas individuales a partir de sus intereses a traves de un Sistema de “MATCH” para concretar la entrega y recepción del componente a reutilizar. Siendo así nuestro principal objetivo el reducir el fluido de residuos de forma considerable y ademas de forma atractiva para los usuarios tanto para receptores como para remitentes. Optimizando un proceso que puede llegar a ser costoso y abrumador. 
+
+                </p>
+            </div>
+            <img class="nosotros__imagen" src="FrontEndStore_inicio/img/economia_circularr.jpg" alt="imagen nosotros">
+
+        </div>
+    </main>
+
+
+    <section class="contenedor comprar">
+        <h2 class="comprar_titulo">¿Por qué elegirnos a nostros?</h2>
+
+        <div class="bloques">
+            <div class="bloque">
+                <img class="bloque__imagen" src="FrontEndStore_inicio/img/icono_1.png" alt="Por que comprar">
+                <h3 class="bloque__titulo">Obten grandes ganancias</h3>
+                <p>No solamente estaras apoyando al cuidado del medio ambiento, sino que tambien seras recompensado por ello.
+                </p>
+            </div>
+            <!--.Bloque-->
+
+            <div class="bloque">
+                <div class="bloqueleg">
+                <svg xmlns="http://www.w3.org/2000/svg" class=" icon icon-tabler icon-tabler-lego" width="150" height="220" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <line x1="9.5" y1="11" x2="9.51" y2="11" />
+                    <line x1="14.5" y1="11" x2="14.51" y2="11" />
+                    <path d="M9.5 15a3.5 3.5 0 0 0 5 0" />
+                    <path d="M7 5h1v-2h8v2h1a3 3 0 0 1 3 3v9a3 3 0 0 1 -3 3v1h-10v-1a3 3 0 0 1 -3 -3v-9a3 3 0 0 1 3 -3" />
+                  </svg>
+            </div>
+                <h3 class="bloque__titulo">Asistencia en linea las 24 Horas</h3>
+                <p>Contamos con un sistema de asistencia en linea dispuesto a ayudarte las 24 horas del dia. 
+                </p>
+            </div>
+            <!--.Bloque-->
+
+            <div class="bloque">
+                <img class="bloque__imagen" src="FrontEndStore_inicio/img/icono_3.png" alt="Por que comprar">
+                <h3 class="bloque__titulo">Envios Respaldados</h3>
+                <p>Total seguridad y confianza al a hora de concretar envios, los cuales seran monitorieados en todo momento.
+                </p>
+            </div>
+            <!--.Bloque-->
+
+            <div class="bloque">
+                <img class="bloque__imagen" src="FrontEndStore_inicio/img/icono_4.png" alt="Por que comprar">
+                <h3 class="bloque__titulo">La Mejor Calidad</h3>
+                <p> La mejor calidad y confianza, a la hora de prestar nuestros servicios.   
+                </p>
+            </div>
+            <!--.Bloque-->
+        </div>
+        <!--.Bloques-->
+    </section>
+
+    <footer class="footer">
+        <p class="footer__texto">Circular Treasures - Todos los derechos Reservados 2022.</p>
+    </footer>
+
+</body>
+
+</html>
