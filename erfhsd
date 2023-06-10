@@ -1,0 +1,82 @@
+algoritmos de busqueda:
+#include <iostream>
+
+// Función que busca dentro del arreglo
+int buscarElemento(int arreglo[], int longitudDeArreglo, int busqueda) {
+  for (int i = 0; i < longitudDeArreglo; i++) {
+    int elementoActual = arreglo[i];
+    if (elementoActual == busqueda) return i;
+  }
+  // Final del ciclo, no encontramos nada así que regresamos
+  // -1
+  return -1;
+}
+
+int main() {
+  std::string nombres[] = {
+      "Luis", "Marijo", "Paco", "Pedro",
+  };
+  std::string busqueda = "Luis";
+  int indice = -1;
+  for (int i = 0; i < sizeof(nombres) / sizeof(nombres[0]); i++) {
+    std::string nombreActual = nombres[i];
+    if (nombreActual == busqueda) {
+      indice = i;
+      break;
+    }
+  }
+  if (indice == -1) {
+    std::cout << "No encontrado\n";
+  } else {
+    std::cout << "Encontrado en el indice " << indice << std::endl;
+  }
+  // Veamos otro ejemplo con números
+  // y la función
+
+  int numeros[] = {
+      1, 2, 5, 50, 11, 50, 20,
+  };
+  int longitud = sizeof(numeros) / sizeof(numeros[0]), numeroBuscado = 100;
+
+  int indiceDeNumeroBuscado = buscarElemento(numeros, longitud, numeroBuscado);
+  if (indiceDeNumeroBuscado == -1) {
+    std::cout << "No encontrado\n";
+  } else {
+    std::cout << "Encontrado en el indice " << indice << std::endl;
+  }
+}
+
+de ordenamiento:
+
+#include <iostream>
+using namespace std;
+
+// Función para imprimir un array
+void printArray(int arr[], int size) {
+    for (int i = 0; i < size; i++)
+        cout << arr[i] << " ";
+    cout << endl;
+}
+
+// Función para implementar el algoritmo Bubble Sort
+void bubbleSort(int arr[], int n) {
+    // Recorremos todos los elementos del array
+    for (int i = 0; i < n-1; i++) {     
+        // Los últimos i elementos ya están en su lugar correcto, por lo que no necesitamos considerarlos
+        for (int j = 0; j < n-i-1; j++) {
+            // Si el elemento actual es mayor que el siguiente, los intercambiamos
+            if (arr[j] > arr[j+1]) {
+                swap(arr[j], arr[j+1]);
+            }
+        }
+    }
+}
+
+int main() {
+    int arr[] = {64, 34, 25, 12, 22, 11, 90};
+    int n = sizeof(arr)/sizeof(arr[0]);
+    bubbleSort(arr, n);
+    cout<<"Array ordenado: \n";
+    printArray(arr, n);
+    return 0;
+}
